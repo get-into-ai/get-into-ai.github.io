@@ -10,13 +10,15 @@ body {
   height: 100%;
   margin: 0;
   font-family: "Roboto", sans-serif;
-  background-image: url("../img/background.jpg");
-  background-size: cover;
 }
 
 body {
   display: flex;
   justify-content: center;
+  align-items: center;
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 main.countdown {
@@ -118,4 +120,14 @@ p {
 .qr img {
   /* width: 350px; */
   margin-top: 25px;
+}
+
+@media (max-width: 1600px) {
+  body {
+    flex-direction: column;
+    transform: scale(50%);
+  }
+  .qr {
+    margin: 0;
+  }
 }
