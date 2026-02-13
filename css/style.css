@@ -134,11 +134,12 @@ header.hackathon-header a {
   text-align: center;
   transition: opacity 0.2s ease-in-out;
 }
-header.hackathon-header a:hover {
+
+/* header.hackathon-header a:hover {
   opacity: 1;
   display: flex;
   transition: opacity 0.2s ease-in-out;
-}
+} */
 
 header.hackathon-header h3 {
   color: white;
