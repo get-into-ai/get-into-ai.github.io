@@ -10,18 +10,21 @@ body {
   height: 100%;
   margin: 0;
   font-family: "Roboto", sans-serif;
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+}
+
+body {
+  display: flex;
+  justify-content: center;
 }
 
 main.countdown {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   height: 100%;
-  background-image: url("../img/background.jpg");
-  background-size: cover;
-  max-width: 100%;
   margin: 0;
   padding: 0;
 }
@@ -46,10 +49,28 @@ main.countdown {
   padding-bottom: 50px;
 }
 
-h1 {
+h1,
+h2,
+p {
   text-transform: uppercase;
   color: white;
   text-shadow: 0px 0px 8px #8fcb84cc;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h2,
+p {
+  margin-bottom: 0px;
+}
+
+p {
+  margin-top: 0px;
+  font-size: 2em;
+  text-transform: lowercase;
 }
 
 .spaces-remaining {
@@ -83,4 +104,18 @@ h1 {
   box-shadow: 0px 0px 8px #8fcb84cc;
   width: 860px;
   height: 50px;
+}
+
+.qr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+  width: 500px;
+}
+
+.qr img {
+  /* width: 350px; */
+  margin-top: 25px;
 }
