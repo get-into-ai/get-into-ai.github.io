@@ -1,9 +1,15 @@
 /* Countdown */
 
+:root {
+  --registrations: 24;
+  --spaces-remaining: calc(48 - var(--registrations));
+}
+
 html,
 body {
   height: 100%;
   margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 main.countdown {
@@ -41,8 +47,40 @@ main.countdown {
 }
 
 h1 {
-  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   color: white;
   text-shadow: 0px 0px 8px #8fcb84cc;
+}
+
+.spaces-remaining {
+  margin: 40px auto 0px auto;
+  width: 860px;
+}
+.spaces-remaining h3 {
+  margin: 0;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 0px 0px 8px #00000055;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50px;
+  text-align: center;
+  right: 0;
+  position: relative;
+  font-size: 2em;
+}
+
+.spaces-remaining::before {
+  border-radius: 50px;
+  position: absolute;
+  content: "";
+  background: linear-gradient(
+    to right,
+    #8fcb84cc calc(var(--registrations) / 48 * 100%),
+    rgba(0, 0, 0, 0.5) calc(var(--registrations) / 48 * 100%),
+    rgba(0, 0, 0, 0.5) calc(var(--spaces-remaining) / 48 * 100%)
+  );
+  box-shadow: 0px 0px 8px #8fcb84cc;
+  width: 860px;
+  height: 50px;
 }
