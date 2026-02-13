@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-  --registrations: 21;
+  --registrations: 23;
   --spaces-remaining: calc(48 - var(--registrations));
 }
 
