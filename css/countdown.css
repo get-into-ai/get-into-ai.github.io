@@ -122,7 +122,7 @@ p {
   margin-top: 25px;
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1600px), (orientation: portrait) {
   body {
     flex-direction: column;
     transform: scale(50%);
