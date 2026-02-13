@@ -1,9 +1,3 @@
-/* Variables */
-:root {
-  --registrations: 23;
-  --spaces-remaining: calc(48 - var(--registrations));
-}
-
 /* Base reset */
 * {
   margin: 0;
@@ -109,6 +103,13 @@ footer {
   background: #092f49;
 }
 
+/* Hackathon */
+
+:root {
+  --registrations: 24;
+  --spaces-remaining: calc(48 - var(--registrations));
+}
+
 header.hackathon-header {
   padding: 0px;
   width: 100%;
@@ -116,6 +117,33 @@ header.hackathon-header {
   position: relative;
   border-radius: 4px;
   margin-bottom: 25px;
+}
+
+header.hackathon-header a {
+  display: flex;
+  opacity: 0;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  line-height: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: opacity 0.2s ease-in-out;
+}
+header.hackathon-header a:hover {
+  opacity: 1;
+  display: flex;
+  transition: opacity 0.2s ease-in-out;
+}
+
+header.hackathon-header h3 {
+  color: white;
+  margin: 0;
+  font-size: 2em;
 }
 
 header.hackathon-header .spaces-remaining {
