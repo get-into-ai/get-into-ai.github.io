@@ -21,13 +21,25 @@ body {
 }
 
 /* Layout */
-header {
+body > header {
   background: #0b3c5d;
   color: white;
   padding: 1.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
 }
 
-header h1 {
+body > header .right a {
+  display: flex;
+  height: 100%;
+  /* align-items: center; */
+}
+
+body > header img {
+  height: 40px;
+}
+
+body > header h1 {
   margin-bottom: 0.5rem;
 }
 
@@ -101,6 +113,21 @@ footer {
 
 .button:hover {
   background: #092f49;
+}
+
+@media (max-width: 700px) {
+  body > header {
+    flex-direction: column;
+  }
+
+  body > header .left {
+    order: 2;
+  }
+
+  body > header .right {
+    order: 1;
+    margin-bottom: 15px;
+  }
 }
 
 /* Hackathon */
