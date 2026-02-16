@@ -106,7 +106,7 @@ footer {
 /* Hackathon */
 
 :root {
-  --registrations: 37;
+  --registrations: 39;
   --spaces-remaining: calc(48 - var(--registrations));
 }
 
