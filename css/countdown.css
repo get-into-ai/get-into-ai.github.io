@@ -1,7 +1,7 @@
 /* Countdown */
 
 :root {
-  --registrations: 40;
+  --registrations: 42;
   --spaces-remaining: calc(48 - var(--registrations));
 }
 
