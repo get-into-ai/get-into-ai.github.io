@@ -109,6 +109,28 @@ h3, h4 {
     line-height: 1.6;
 }
 
+.welcome {
+  background: #ffffff;
+  padding: 30px;
+  margin-bottom: 35px;
+  border-left: 6px solid #003865;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+}
+
+.welcome h2 {
+  margin-top: 0;
+  color: #003865;
+}
+
+.welcome-signoff {
+  margin-top: 20px;
+  font-style: italic;
+  color: #003865;
+}
+
+
+
 /* ============================= */
 /* Abstract Page Styling         */
 /* ============================= */
