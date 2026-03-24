@@ -234,3 +234,28 @@ header.hackathon-header .flipdown {
     display: none;
   }
 }
+
+.promo {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.promo-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.promo-text {
+  max-width: 500px;
+}
+
+.promo-text h2 {
+  margin-bottom: 1rem;
+}
+
+.promo-text p {
+  margin: 0.5rem 0;
+}
