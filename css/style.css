@@ -259,3 +259,11 @@ header.hackathon-header .flipdown {
 .promo-text p {
   margin: 0.5rem 0;
 }
+
+
+@media (max-width: 768px) {
+  .promo {
+    flex-direction: column;
+    text-align: center;
+  }
+}
